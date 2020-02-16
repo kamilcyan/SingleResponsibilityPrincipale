@@ -6,7 +6,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Colors colors = new Colors();
+            Shapes shapes = new Shapes();
+
+            colors.Color = "red";
+            shapes.Shape = "triangle";
+
+            colors.setColor();
+            shapes.setShape();
+            Console.WriteLine("Figure stats: " + colors.Color + ", " + shapes.Shape);
+            Console.ReadKey();
         }
     }
 }
